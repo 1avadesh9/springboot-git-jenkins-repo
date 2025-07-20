@@ -16,7 +16,7 @@ public class SpringBootGitJenkinsMain implements CommandLineRunner
    public static void main(String[] args)
    {
 	   SpringApplication.run(SpringBootGitJenkinsMain.class, args);
-	   System.out.println("*******SPRINGBOOT GIT JENKINS PROJECT DEPLOYMENT STARTED ON  "+LocalDateTime.now());
+	   log.info("*******SPRINGBOOT GIT JENKINS PROJECT DEPLOYMENT STARTED ON  "+LocalDateTime.now());
    }
 
 @Override
