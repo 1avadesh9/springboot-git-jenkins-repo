@@ -2,10 +2,25 @@ package com.itsajs;
 
 import java.time.LocalDateTime;
 
-public class SpringBootGitJenkinsMain
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
+
+@SpringBootApplication
+@EnableCaching
+public class SpringBootGitJenkinsMain implements CommandLineRunner
 {
    public static void main(String[] args)
    {
-	 System.out.println("*******SPRINGBOOT GIT JENKINS PROJECT DEPLOYMENT STARTED ON  "+LocalDateTime.now());
+	   SpringApplication.run(SpringBootGitJenkinsMain.class, args);
+	   System.out.println("*******SPRINGBOOT GIT JENKINS PROJECT DEPLOYMENT STARTED ON  "+LocalDateTime.now());
    }
+
+@Override
+public void run(String... args) throws Exception 
+{
+	// TODO Auto-generated method stub
+	
+}
 }
