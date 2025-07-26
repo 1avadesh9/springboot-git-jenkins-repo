@@ -6,6 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
+
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
@@ -17,10 +18,11 @@ public class SpringBootGitJenkinsMain implements CommandLineRunner
    {
 	   SpringApplication.run(SpringBootGitJenkinsMain.class, args);
 	   log.info("*******SPRINGBOOT GIT JENKINS PROJECT DEPLOYMENT STARTED ON  "+LocalDateTime.now());
+	   
    }
 
 @Override
-public void run(String... args) throws Exception 
+public void run(String... args)  throws Exception 
 {
   log.info("entered in SpringBootGitJenkinsMain.java run()...");
 	
